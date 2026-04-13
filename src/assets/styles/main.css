@@ -228,7 +228,9 @@ img { max-width: 100%; display: block; }
 .link-line:hover::after { transform: scaleX(1); }
 
 /* ── TRANSITIONS ── */
-* { transition: background-color 0.4s, border-color 0.4s, color 0.3s; }
+*:not(.navbar):not(.nav-wrap) {
+  transition: background-color 0.4s, border-color 0.4s, color 0.3s;
+}
 img, svg { transition: none; }
 
 /* ── ANIMATIONS ── */
@@ -276,4 +278,11 @@ img, svg { transition: none; }
   outline: 2px solid var(--accent-line);
   outline-offset: 3px;
   border-radius: 4px;
+}
+
+/* Agregar al final de main.css */
+.glass,
+.navbar {
+  isolation: isolate;
+  transform: translateZ(0); /* fuerza GPU layer propio */
 }

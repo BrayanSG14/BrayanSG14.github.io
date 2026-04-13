@@ -75,6 +75,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 </script>
 
 <style scoped>
+
 .nav-wrap {
   display: flex;
   justify-content: center;
@@ -83,6 +84,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   top: 1.25rem;
   z-index: 100;
   pointer-events: none;
+  isolation: isolate; /* ← AGREGAR */
 }
 
 /* ─── GLASS REALISTA – TEMA CLARO ─── */
@@ -105,7 +107,9 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     );
   backdrop-filter: blur(6px) saturate(200%) brightness(1.06);
   -webkit-backdrop-filter: blur(28px) saturate(200%) brightness(1.06);
-
+  transform: translateZ(0);      /* ← AGREGAR */
+  will-change: backdrop-filter;  /* ← AGREGAR */
+  
   /* Sombra interna de reflejo + sombra externa suave */
   box-shadow:
     inset 0 1px 0 rgba(0, 0, 0, 0.1),
@@ -364,6 +368,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     background: rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(28px) saturate(200%);
     -webkit-backdrop-filter: blur(28px) saturate(200%);
+    transform: translateZ(0);
     border-top: 1px solid rgba(0, 0, 0, 0.15);
     border-left: 1px solid rgba(0, 0, 0, 0.08);
     border-right: 1px solid rgba(0, 0, 0, 0.04);

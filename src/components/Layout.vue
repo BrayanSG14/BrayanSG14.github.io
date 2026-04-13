@@ -14,11 +14,13 @@ import CustomCursor from './CustomCursor.vue'
 </script>
 
 <style scoped>
+
 .layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: var(--bg);
+  isolation: isolate; 
 }
 
 main { flex: 1; }
