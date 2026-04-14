@@ -105,8 +105,8 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
       rgba(255, 255, 255, 0.48) 50%,
       rgba(230, 235, 245, 0.58) 100%
     );
-  backdrop-filter: blur(6px) saturate(200%) brightness(1.06);
-  -webkit-backdrop-filter: blur(28px) saturate(200%) brightness(1.06);
+  /* backdrop-filter: blur(6px) saturate(200%) brightness(1.06); */
+  /* -webkit-backdrop-filter: blur(28px) saturate(200%) brightness(1.06); */
   transform: translateZ(0);      /* ← AGREGAR */
   
   /* Sombra interna de reflejo + sombra externa suave */
@@ -132,8 +132,8 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
       rgba(255, 255, 255, 0.04) 40%,
       rgba(200, 210, 255, 0.06) 100%
     );
-  backdrop-filter: blur(32px) saturate(180%) brightness(0.9);
-  -webkit-backdrop-filter: blur(32px) saturate(180%) brightness(0.9);
+  /* backdrop-filter: blur(32px) saturate(180%) brightness(0.9); */
+  /* -webkit-backdrop-filter: blur(32px) saturate(180%) brightness(0.9); */
 
   /* Borde espejo oscuro: línea clara viva arriba, oscura abajo */
   border-top: 1px solid rgba(255, 255, 255, 0.30);

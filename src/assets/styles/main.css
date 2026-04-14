@@ -279,3 +279,14 @@ img, svg { transition: none; }
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+/* ── NAVBAR BACKDROP (fuera de scoped para que el minificador no lo elimine) ── */
+.navbar {
+  -webkit-backdrop-filter: blur(28px) saturate(200%) brightness(1.06);
+  backdrop-filter: blur(28px) saturate(200%) brightness(1.06);
+}
+
+[data-theme="dark"] .navbar {
+  -webkit-backdrop-filter: blur(32px) saturate(180%) brightness(0.9);
+  backdrop-filter: blur(32px) saturate(180%) brightness(0.9);
+}
