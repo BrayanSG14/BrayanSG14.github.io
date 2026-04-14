@@ -119,8 +119,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   transition:
     background 0.4s,
     border-color 0.4s,
-    box-shadow 0.4s,
-    backdrop-filter 0.4s;
+    box-shadow 0.4s;
 }
 
 /* ─── GLASS REALISTA – TEMA OSCURO ─── */
