@@ -279,10 +279,3 @@ img, svg { transition: none; }
   outline-offset: 3px;
   border-radius: 4px;
 }
-
-/* Agregar al final de main.css */
-.glass,
-.navbar {
-  isolation: isolate;
-  transform: translateZ(0); /* fuerza GPU layer propio */
-}

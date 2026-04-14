@@ -84,7 +84,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   top: 1.25rem;
   z-index: 100;
   pointer-events: none;
-  isolation: isolate; /* ← AGREGAR */
+
 }
 
 /* ─── GLASS REALISTA – TEMA CLARO ─── */
@@ -108,7 +108,6 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   backdrop-filter: blur(6px) saturate(200%) brightness(1.06);
   -webkit-backdrop-filter: blur(28px) saturate(200%) brightness(1.06);
   transform: translateZ(0);      /* ← AGREGAR */
-  will-change: backdrop-filter;  /* ← AGREGAR */
   
   /* Sombra interna de reflejo + sombra externa suave */
   box-shadow:

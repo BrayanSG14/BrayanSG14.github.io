@@ -20,7 +20,6 @@ import CustomCursor from './CustomCursor.vue'
   display: flex;
   flex-direction: column;
   background: var(--bg);
-  isolation: isolate; 
 }
 
 main { flex: 1; }
